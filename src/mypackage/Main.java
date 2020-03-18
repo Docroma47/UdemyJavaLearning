@@ -16,14 +16,18 @@ public class Main {
         cat.walk("Backyard");
         dog.walk("Park");
 
-        cat.sleep();
-        dog.sleep();
-
         cat.feed("Milk");
         dog.sit();
 
         System.out.println("Cat name is: " + cat.name);
         System.out.println("Dog name is: " + dog.name);
+
+        dog.sound();
+        cat.sound();
+
+        dog.var = 10;
+
+        System.out.println(dog.getWeight());
 
     }
 }
