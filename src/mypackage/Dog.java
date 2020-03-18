@@ -1,14 +1,17 @@
 package mypackage;
 
 public class Dog extends Animal {
-
-    int weight;
-
-    public void sit(){
-        System.out.println("I'm sitting");
+    @Override
+    public void saySmth() {
+        System.out.println("Gav gav!");
     }
 
-    public void lay(){
-        System.out.println("I'm laying");
+    @Override
+    public void eat() {
+        System.out.println("I like my food!");
+    }
+
+    public void sit() {
+        System.out.println("I'm sitting.");
     }
 }

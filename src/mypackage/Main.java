@@ -3,27 +3,18 @@ package mypackage;
 public class Main {
 
     public static void main(String[] args) {
-
-        Cat cat = new Cat();
         Dog dog = new Dog();
+        Cat cat = new Cat();
 
-        cat.name = "Vasya";
-        dog.name = "Barsik";
-
-        cat.color = "White";
-        dog.color = "Black";
-
-        cat.walk("Backyard");
+        dog.sit();
+        dog.saySmth();
+        dog.eat();
         dog.walk("Park");
 
-        cat.feed("Milk");
-        dog.sit();
-
-        System.out.println("Cat name is: " + cat.name);
-        System.out.println("Dog name is: " + dog.name);
-
-        dog.sound();
-        cat.sound();
+        System.out.println();
+        cat.saySmth();
+        cat.eat();
+        cat.walk("Backyard");
 
     }
 }

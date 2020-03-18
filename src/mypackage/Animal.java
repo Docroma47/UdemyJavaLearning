@@ -1,18 +1,11 @@
 package mypackage;
 
-public class Animal {
-    String name;
-    String color;
+public abstract class Animal {
+    public abstract void saySmth();
+    public abstract void eat();
 
-    public void walk(String place){
-        System.out.println("We are walking here: " + place);
-    }
-
-    public void sleep(){
-        System.out.println("Zzzz");
-    }
-
-    public void sound(){
-        System.out.println("Hello!");
+    public  void walk(String place) {
+        System.out.println("I'm walking here: " + place);
     }
 }
+

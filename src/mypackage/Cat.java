@@ -2,13 +2,13 @@ package mypackage;
 
 public class Cat extends Animal {
 
-    public void feed(String feed){
-        System.out.println("I like: " + feed);
+    @Override
+    public void saySmth() {
+        System.out.println("Mew mew!");
     }
 
     @Override
-    public void sound(){
-        System.out.println("Mew mew mew!");
+    public void eat() {
+        System.out.println("I like Milk!");
     }
-
 }
