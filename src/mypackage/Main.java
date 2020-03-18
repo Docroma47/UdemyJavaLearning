@@ -1,24 +1,27 @@
 package mypackage;
 
 public class Main {
-
     public static void main(String[] args) {
 
-        try {
-            devide(10, 2);
-        } catch (ArithmeticException e) {
-            e.printStackTrace();
-        } finally {
-            System.out.println("");
-        }
+        Car car1 = new Car();
+        car1.color = "Black";
+        car1.length = 5000;
+        car1.height = 2000;
+        car1.width = 2000;
 
-    }
+        car1.addWeight(50);
+        car1.drive(120);
 
-    public static void devide(int a, int b) throws ArithmeticException{
-        if (b == 0){
-            throw new ArithmeticException("Cannot devide by zero!");
-        } else {
-            System.out.println("Result is: " + a / b);
-        }
+        car1.addWeight(700);
+        car1.drive(100);
+
+        Car car2 = new Car();
+        car2.color = "White";
+        Car car3 = new Car();
+        car3.color = "Red";
+
+        car2.drive(100);
+        car3.drive(150);
+
     }
 }
