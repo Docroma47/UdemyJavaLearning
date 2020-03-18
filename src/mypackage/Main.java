@@ -2,52 +2,45 @@ package mypackage;
 
 public class Main {
     public static void main(String[] args) {
-        //Lesson 1
-        System.out.print("Hello World! ");
-        System.out.println("I'ts my first Programme! ");
-        System.out.println("Good bye!");
+        String[] names;
+        names = new String[3];
 
-        //Lesson 2
-        byte a = 5; // -128 127
-        short b = -100; // -32768 32767
-        int c;
-        c = 10000;
-        long d = -122335544;
+        String[] name = new String[3];
+        int[] arr = new int[10];
 
-        System.out.println(a);
-        System.out.println("short b: " + b);
-        System.out.println("int c: " + c);
-        System.out.println("long d: " + d);
+        name[0] = "Boris";
+        name[1] = "Senya";
+        name[2] = "Vova";
 
-        double double1 = 133.155;
-        System.out.println();
-        System.out.println("double double1: " + double1);
-        float float1 = 150.32f;
-        System.out.println(float1);
+        System.out.println(name[0]);
+        System.out.println(name[2]);
 
-        boolean boolean1 = true;
-        boolean boolean2 = false;
+        arr[3] = 15;
+        arr[3] = 10;
+        System.out.println(arr[3]);
 
-        System.out.println(boolean1);
-        System.out.println(boolean2);
+        int[] array = {10, 13, 200};
 
-        boolean boolean3 = 1 + 2 > 0;
-        boolean boolean4 = 1 + 2 > 5;
+        System.out.println(array[0]);
+        System.out.println(array[1]);
+        System.out.println(array[2]);
 
         System.out.println();
-        System.out.println(boolean3);
-        System.out.println(boolean4);
+        for (int i = 0; i < 5; i++) System.out.println(i);
+
+        int[] array2 = new int[15];
+        System.out.println();
+        for (int j = 0; j < 15; j++) {
+            array2[j] = j * 10;
+            System.out.println(array2[j]);
+        }
 
         System.out.println();
-        String str = "Hello ";
-        System.out.println(str);
-        String str2 = "World!";
-        String str3 = str + str2;
-        System.out.println(str3);
+        System.out.println(array2.length);
 
-        System.out.println();
-        char char1 = 'q';
-        System.out.println(char1);
+        System.out.println(array2[array2.length - 1]);
+
+
     }
 
 }
