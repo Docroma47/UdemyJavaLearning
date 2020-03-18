@@ -1,6 +1,7 @@
 package mypackage;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Main {
@@ -59,7 +60,13 @@ public class Main {
         list.removeAll(list2);
         System.out.println(list.containsAll(list2));
 
-
+        Iterator<Integer> iterator = list.iterator();
+//        System.out.println(iterator.next());
+//        System.out.println(iterator.next());
+//        System.out.println(iterator.hasNext());
+        System.out.println();
+        
+        while (iterator.hasNext()) System.out.println(iterator.next());
     }
 
 }
