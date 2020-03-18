@@ -25,9 +25,5 @@ public class Main {
         dog.sound();
         cat.sound();
 
-        dog.var = 10;
-
-        System.out.println(dog.getWeight());
-
     }
 }
