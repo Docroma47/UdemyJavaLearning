@@ -2,53 +2,39 @@ package mypackage;
 
 public class Main {
     public static void main(String[] args) {
-        int i = 10;
-
         System.out.println("Start!");
 
-        if (i > 10) {
-            System.out.println("i > 5");
-            i++;
-            System.out.println(i);
-        } else if (i < 10 && i > 5) {
-            System.out.println("i < 10 and i > 5");
-            i--;
-            System.out.println(i);
-        } else {
-            System.out.println("Nothing");
-        }
+        for (int i = 0; i < 10; i++) System.out.println(i + 10);
 
         System.out.println("End!");
         System.out.println();
 
-        i = 100;
+        for (int i = 10; i > 0; i--) System.out.println(i);
 
-        if (i > 50) {
-            System.out.println("i > 50");
-            if (i > 90) {
-                System.out.println("i > 90");
-            } else {
-                System.out.println("i <= 90");
-            }
-        } else {
-            System.out.println("i <= 50");
+        int[] array = new int[10];
+        System.out.println();
+        for (int i = 0; i < 10; i++) array[i] = i * 2;
+
+        for (int i = 0; i < 10; i++) System.out.println("Element with index " + i + " is " + array[i]);
+
+        System.out.println();
+        for (int element : array) System.out.println(element);
+
+        System.out.println();
+        int i = 0;
+        boolean bool = true;
+        while (bool) {
+            System.out.println("While: " + i);
+            i++;
+            if (i == 5) bool = false;
         }
 
-        i = 10;
-
-        switch (i) {
-            case 1:
-                System.out.println("Then number is 1");
-                break;
-            case 2:
-                System.out.println("Then number is 2");
-                break;
-            case 3:
-                System.out.println("Then number is 3");
-                break;
-            default:
-                System.out.println("I don't know the number!");
-        }
+        System.out.println();
+        i = 5;
+        do {
+            System.out.println("Do: " + i);
+            i++;
+        }  while (i < 5);
     }
 
 }
