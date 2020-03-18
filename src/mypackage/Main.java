@@ -1,40 +1,65 @@
 package mypackage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Start!");
+        List<Integer> list = new ArrayList<>();
 
-        for (int i = 0; i < 10; i++) System.out.println(i + 10);
+        list.add(5);
+        list.add(10);
+        list.add(9);
 
-        System.out.println("End!");
+        int a = list.get(2);
+
+        System.out.println(list.get(1));
+        System.out.println(a);
+
+        list.set(2, 100);
+
+        System.out.println(list.get(2));
         System.out.println();
-
-        for (int i = 10; i > 0; i--) System.out.println(i);
-
-        int[] array = new int[10];
+        System.out.println(list.get(1));
+        list.remove(1);
+        System.out.println(list.get(1));
         System.out.println();
-        for (int i = 0; i < 10; i++) array[i] = i * 2;
-
-        for (int i = 0; i < 10; i++) System.out.println("Element with index " + i + " is " + array[i]);
-
+        System.out.println(list.get(1));
         System.out.println();
-        for (int element : array) System.out.println(element);
+        list.add(9);
+        System.out.println(list.size());
 
-        System.out.println();
-        int i = 0;
-        boolean bool = true;
-        while (bool) {
-            System.out.println("While: " + i);
-            i++;
-            if (i == 5) bool = false;
-        }
+//        list.clear();
+        System.out.println(list.size());
+
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(45);
+        list2.add(56);
 
         System.out.println();
-        i = 5;
-        do {
-            System.out.println("Do: " + i);
-            i++;
-        }  while (i < 5);
+        System.out.println(list.size());
+        list.addAll(list2);
+        System.out.println(list.size());
+
+        list.removeAll(list2);
+        System.out.println(list.size());
+
+        System.out.println();
+        System.out.println(list.isEmpty());
+//        list.clear();
+        System.out.println(list.isEmpty());
+
+        System.out.println();
+        System.out.println(list.contains(100));
+        System.out.println(list.contains(987));
+
+        list.addAll(list2);
+        System.out.println();
+        System.out.println(list.containsAll(list2));
+        list.removeAll(list2);
+        System.out.println(list.containsAll(list2));
+
+
     }
 
 }
