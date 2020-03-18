@@ -2,43 +2,102 @@ package mypackage;
 
 public class Main {
     public static void main(String[] args) {
-        String[] names;
-        names = new String[3];
+        int a;
 
-        String[] name = new String[3];
-        int[] arr = new int[10];
+        a = 10;
+        a = 20;
+        System.out.println(a);
 
-        name[0] = "Boris";
-        name[1] = "Senya";
-        name[2] = "Vova";
+        int b = a;
+        System.out.println(b);
 
-        System.out.println(name[0]);
-        System.out.println(name[2]);
+        int c, d;
 
-        arr[3] = 15;
-        arr[3] = 10;
-        System.out.println(arr[3]);
+        c = d = b;
+        System.out.println(c + " " + d);
 
-        int[] array = {10, 13, 200};
+        a = 13;
+        b = 5;
+        System.out.println();
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a / b);
+        System.out.println(a * b);
+        double e = 15;
+        double f = 7;
+        System.out.println();
+        System.out.println(e / f);
+        System.out.println(a % b);
 
-        System.out.println(array[0]);
-        System.out.println(array[1]);
-        System.out.println(array[2]);
+        a = b + c * d;
+        System.out.println(a);
+
+        a = (b + c) * d;
+        System.out.println(a);
+
+        a = 15;
+        b = 10;
+        System.out.println();
+        System.out.println(a > b);
+        System.out.println(a < b);
+        System.out.println(a - 5 >= b);
+        System.out.println(a == b);
+        System.out.println(a != b);
+        System.out.println(a + 10 <= b + 15);
+        System.out.println(!(a + 10 <= b + 15));
+        System.out.println(!(false));
 
         System.out.println();
-        for (int i = 0; i < 5; i++) System.out.println(i);
+        int i = 0;
+        i++; // i = i + 1;
+        System.out.println(i);
+        i--; // i = i - 1;
+        System.out.println(i);
 
-        int[] array2 = new int[15];
+
+        i = 5;
         System.out.println();
-        for (int j = 0; j < 15; j++) {
-            array2[j] = j * 10;
-            System.out.println(array2[j]);
-        }
-
+        System.out.println(i++);
+        System.out.println(i);
         System.out.println();
-        System.out.println(array2.length);
+        i = 3;
+        a = i++;
+        System.out.println(a);
+        i = 3;
+        a = ++i;
+        System.out.println(a);
 
-        System.out.println(array2[array2.length - 1]);
+        a = 10;
+        b = 20;
+        System.out.println();
+        System.out.println(a > b || a < b);
+        System.out.println(a > b || b > 30);
+        System.out.println(a > b && a < b);
+        System.out.println(a > 9 && b == 20);
+
+        System.out.println(!((a + 10 > 15 || b - 5 > 10) && a < b));
+
+        a = 9;
+        System.out.println();
+        System.out.println(Math.sqrt(a));
+        System.out.println(Math.pow(a, 3));
+
+        a = 10;
+        a = a + 5;
+        System.out.println();
+        System.out.println(a);
+
+        a = 10;
+        a += 5; // a = a + 5;
+        System.out.println(a);
+        a -= 5; // a = a - 5;
+        System.out.println(a);
+        a *= 2; // a = a / 2;
+        System.out.println(a);
+        a /= 2; // a = a / 2;
+        System.out.println(a);
+        a %= 3; // a = a % 5;
+        System.out.println(a);
 
 
     }
