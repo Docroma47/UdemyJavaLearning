@@ -3,18 +3,18 @@ package mypackage;
 public class Main {
 
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        Cat cat = new Cat();
 
-        dog.sit();
-        dog.saySmth();
-        dog.eat();
-        dog.walk("Park");
+        Car car = new Car();
+        Plane plane = new Plane();
 
-        System.out.println();
-        cat.saySmth();
-        cat.eat();
-        cat.walk("Backyard");
+        car.go();
+        car.stop();
+        car.method1();
+        car.method2();
+
+        plane.go();
+        plane.stop();
+        plane.setSpeed(500);
 
     }
 }
